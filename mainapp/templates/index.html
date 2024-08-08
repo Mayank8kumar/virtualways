@@ -1,0 +1,748 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Staging | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    {% comment %} " {% static ' likhoge' %}    " {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <span>Call us for any questions</span>
+            <h4>+01 123 456 789</h4>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- <div class="header__logo">
+                        <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'projects' %}">Projects</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <!-- <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./Project-details.html">Project Details</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./services.html">Services</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- <li><a href="./blog.html">Blog</a></li> -->
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <div class="header__widget">
+                        <span>Call us for any questions</span>
+                        <h4>+01 123 456 789</h4>
+                    </div>
+                </div> -->
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="{%static 'img/hero/hero-1.jpg' %}">
+                <div class="hero__text">
+                    <h2>VIRTUALWAYS</h2>
+                    <a href="#" class="primary-btn">Elite AI Consulting</a>
+                    <!-- <a href="#" class="more_btn">Discover more</a> -->
+                    <!-- <div class="hero__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- <div class="hero__items set-bg" data-setbg="{%static 'img/hero/hero-1.jpg' %}">
+                <div class="hero__text">
+                    <h2>Quality is not only our standard.</h2>
+                    <a href="#" class="primary-btn">See Project</a>
+                    <a href="#" class="more_btn">Discover more</a>
+                    <div class="hero__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div class="slide-num" id="snh-1"></div> -->
+        <!-- <div class="slider__progress"><span></span></div> -->
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>who are we</span>
+                            <h2>
+                                Elite AI Consulting: Transforming Industries Globally.
+                                </div>
+                        <div class="about__para__text">
+                            <p>We at VIRTUALWAYS are at the forefront of innovation in artificial intelligence, dedicated to transforming industries, businesses and enhancing human experiences through cutting-edge technologies
+                            </p>
+                            <p>With a deep-rooted commitment to pushing the boundaries of what's possible in Al, we specialize in harnessing the power of machine learning, natural language processing, and computer vision along with a full suite of web and software development experience to deliver intelligent solutions to solve complex modern day problems we cater to diverse sectors worldwide, delivering tailored solutions that optimize processes, drive growth, and enhance customer experiences.</h2>
+                            </p>
+                        </div>
+                        <!-- <a href="#" class="primary-btn normal-btn">Learn More</a>   -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="about__pic__inner">
+                            <img src="{% static 'img/about-pic.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Project Section Begin -->
+    <section class="project">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Our works</span>
+                        <h2>Latest projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{%static 'img/project/Model.jpg' %}">
+                            <div class="project__slider__item__hover">
+                                <span>Artificial Intelligence</span>
+                                <h5>Stock price prediction</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{%static 'img/project/WebsiteDevelopment.jpg' %}">
+                            <div class="project__slider__item__hover">
+                                <span>Development</span>
+                                <h5>Software and Website development</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{%static 'img/project/ModelTraining.jpg' %}">
+                            <div class="project__slider__item__hover">
+                                <span>Chatbots</span>
+                                <h5>LLM Chatbots</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{%static 'img/project/Stockanalysis.jpg' %}">
+                            <div class="project__slider__item__hover">
+                                <span>Tools</span>
+                                <h5>Inhouse Tools</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{%static 'img/project/Searching.jpg' %}">
+                            <div class="project__slider__item__hover">
+                                <span>Systems</span>
+                                <h5>Recommendation or recognition Systems</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our specialization</span>
+                        <h2>What we do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{% static 'img/services/react_resized.png' %}" alt="">
+                        <h4>WEB & Software development</h4>
+                        <p>Website building & Application development Cloud management -AWS, Azure, GCP Devops, backend and frontend integration.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{% static 'img/services/resized_pic2.png' %}" alt="">
+                        <h4>Machine Learning & Data Science</h4>
+                        <p>Custom machine learning model development and deployment Data preprocessing, feature engineering, and predictive analytics Al-powered anomaly detection and pattern recognition.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{% static 'img/services/automation_resized.png' %}" alt="">
+                        <h4>AI Consulting & Automation</h4>
+                        <p>Strategic Al roadmaps and feasibility studies. Technology evaluation and Al maturity assessments. Robotic process automation (RPA) for repetitive task automation and Al-driven automation of customer service operations and support.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{% static 'img/services/natural-language-processing_resized.png' %}" alt="">
+                        <h4>NLP & computer vision application</h4>
+                        <p>Sentiment analysis, text
+                            classification, and named entity recognition (NER) Language translation and multilingual content analysis.Object detection, image classification, and facial recognition and Video analytics for surveillance, anomaly detection, and smart cities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="counter__content"> -->
+                <!-- <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">85</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Projects<br /> Completed</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">127</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Happy<br /> Clients</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">36</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Awards<br /> Received</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">74</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Cups Of<br /> Coffee</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Tech Stack Section Begin -->
+<section class="tech-stack spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title tech-stack__title">
+                    <span>Our</span>
+                    <h2>Tech Stack</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tech-stack__container">
+            <button class="tech-stack__scroll-btn left">&lt;</button>
+            <div class="tech-stack__wrapper">
+                <div class="tech-stack__items">
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/resized_machine_learning.png' %}" alt="">
+                        <h4>Artificial Intelligence</h4>
+                        <ul>
+                            <li>Natural language processing</li>
+                            <li>SpaCy</li>
+                            <li>NLTK</li>
+                            <li>Predictive & Generative AI</li>
+                            <li>Logstash</li>
+                            <li>Named entity recognition</li>
+                            <li>Computer vision</li>
+                            <li>Robotic process automation</li>
+                            <li>Chatbot</li>
+                            <li>Intelligent document processing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/services/resized_pic2.png' %}" alt="">
+                        <h4>Machine Learning</h4>
+                        <ul>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Scikit-learn</li>
+                            <li>Deep neural networks</li>
+                            <li>Predictive analysis & forecasting</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/services/react_resized.png' %}" alt="">
+                        <h4>Frontend Development</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>React JS</li>
+                            <li>Angular</li>
+                            <li>Vue JS</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/backend_resized.png' %}" alt="">
+                        <h4>Backend Development</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/resized_dvops.png' %}" alt="">
+                        <h4>Cloud & Devops</h4>
+                        <ul>
+                            <li>Azure</li>
+                            <li>AWS</li>
+                            <li>GCP</li>
+                            <li>Firebase</li>
+                            <li>Jenkins</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/resized_mobile.png' %}" alt="">
+                        <h4>Mobile Development</h4>
+                        <ul>
+                            <li>iOS</li>
+                            <li>Android</li>
+                            <li>Flutter</li>
+                            <li>React Native</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/frontend_resized.png' %}" alt="">
+                        <h4>E-commerce & CMS</h4>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>Shopify</li>
+                            <li>Wix</li>
+                            <li>Squarespace</li>
+                            <li>Drupal</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack__item">
+                        <img src="{% static 'img/tech stack/resized_bitcoin.png' %} " alt="">
+                        <h4>Blockchain</h4>
+                        <ul>
+                            <li>Ethereum DApps</li>
+                            <li>Solidity</li>
+                            <li>NFT</li>
+                            <li>Smart Contract</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="tech-stack__scroll-btn right">&gt;</button>
+            <script src="{% static 'script.js' %}"></script>
+        </div>
+    </div>
+</section>
+<!-- Tech Stack Section End -->
+
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad set-bg" data-setbg="{%static 'img/testimonial/testimonial-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Testimonials</span>
+                        <h2>Reviews</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“1. We partnered with VIRTUALWAYS for our web and application development needs, and the results were outstanding. Their team's expertise in frontend and backend integration, coupled with their cloud management skills on AWS, helped us launch a seamless, robust platform. Highly recommend their services!”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“2.VIRTUALWAYS exceeded our expectations with their custom machine learning model development. They transformed our data into actionable insights, enhancing our predictive analytics capabilities. Their commitment to quality and innovation is truly commendable.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“3. Thanks to VIRTUALWAYS, our company now has a clear AI roadmap that is driving our strategic initiatives. Their technology evaluation and AI maturity assessments were instrumental in aligning our goals. The RPA solutions they implemented have significantly improved our operational efficiency.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“4. Working with VIRTUALWAYS on our NLP project was a game-changer. They delivered an exceptional sentiment analysis and text classification solution that improved our customer insights. Their expertise in multilingual content analysis was critical for our global operations.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“5. VIRTUALWAYS has been a vital partner in transforming our business processes through AI and automation. Their innovative approach and dedicated support have helped us stay ahead in a competitive market. We're thrilled with the results and look forward to continued collaboration.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Testimonial Section End -->
+
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Our Team</span>
+                        <h2>Meet our team</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="team__btn">
+                        <!-- <a href="#" class="primary-btn normal-btn">View All</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{%static 'img/team/Trikal2.jpg' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Trikal</h5>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <!-- <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p> -->
+                            <!-- <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{%static 'img/team/vikral.jpg' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Vikral Bhagor</h5>
+                                <span>CTO</span>
+                            </div>
+                            <!-- <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p> -->
+                            <!-- <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{%static 'img/team/Mayank.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Mayank Kumar</h5>
+                                <span>Developer</span>
+                            </div>
+                            <!-- <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p> -->
+                            <!-- <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{%static 'img/call-bg.jpg' %}">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="callto__text">
+                        <span>Why choose us?</span>
+                        <h2>Our Ability To Deliver Outstanding Results For Our Clients Starts With Our Team Of Smart.
+                        </h2>
+                        <a href="{% url 'contact' %}" class="primary-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Latest Section Begin -->
+    <!-- <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Latest News</span>
+                        <h2>From our blog</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="latest__btn">
+                        <a href="#" class="primary-btn normal-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{% static 'img/blog/latest-1.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Architecture</span>
+                            <h4>Target and Amazon Shopping List for Home Stagers</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{% static 'img/blog/latest-2.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Interior</span>
+                            <h4>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{% static 'img/blog/latest-3.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Planning</span>
+                            <h4>How to Find the Best Price Structure for Your Home Staging Services</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Latest Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="{%static 'img/footer-bg.jpg' %}">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="footer__top__text">
+                            <h2>Ready To Work With Us?</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__top__newslatter">
+                            <form action="#">
+                                <input type="text" placeholder="Enter your email...">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <h5 style="color: #ffffff; font-weight: 600; font-family: 'Poppins', sans-serif; margin-bottom: 30px;">Contact</h5>
+                        </div>
+                        <!-- <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p> -->
+                        <ul>
+                            <li>support@virtualways.in</li>
+                            <li>+91 88516 36225</li>
+                        </ul>
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'home' %}">Services</a></li>
+                            <li><a href="{% url 'projects' %}">Our Works</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Services</h6>
+                        <ul>
+                            <li><a href="">Web & Software </a></li>
+                            <li><a href="">ML & Data Science</a></li>
+                            <li><a href="">AI & Automation</a></li>
+                            <li><a href="">NLP & Computer vision </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__address">
+                        <h6>Get In Touch</h6>
+                        <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
+                        <ul>
+                            <li>Info.colorlib@gmail.com</li>
+                            <li>+84 123 456 789</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="copyright__text">
+                            <p>Copyright © <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="copyright__widget">
+                        <a href="#">Terms of use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
