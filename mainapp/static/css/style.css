@@ -433,6 +433,15 @@ ol {
 	display: none;
 }
 
+
+
+@media only screen and (max-width: 991px) {
+    .header.header-normal {
+		position: relative;
+		padding: 15% 0 30px;
+	}
+    }
+
 /*---------------------
   Hero
 -----------------------*/
@@ -722,6 +731,7 @@ ol {
   Tech stack
 -----------------------*/
 
+
 .tech-stack__container {
     position: relative;
     width: 100%;
@@ -741,8 +751,7 @@ ol {
 .tech-stack__item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    /* justify-content: center;  */
+    align-items: center;
     min-width: 25%;
     padding: 13px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -769,12 +778,11 @@ ol {
 }
 
 .tech-stack__item ul li {
-    margin-bottom: 5px; /* Adjust spacing between list items */
+    margin-bottom: 5px;
 }
 
-
 .tech-stack__item h4 {
-    margin-bottom: 20px; /* Adjust this value as needed */
+    margin-bottom: 20px;
 }
 
 .tech-stack__item img {
@@ -804,24 +812,43 @@ ol {
     right: 10px;
 }
 
-@media (max-width: 1200px) {
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .tech-stack__item {
         min-width: 33.33%;
+		
     }
 }
 
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
     .tech-stack__item {
-        min-width: 50%;
+        min-width: 23%;
+    }
+
+    .tech-stack__scroll-btn.left {
+        left: 5px;
+		
+    }
+
+    .tech-stack__scroll-btn.right {
+        right: 5px;
+		
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+        line-height: 42px;
     }
 }
 
-@media (max-width: 576px) {
+
+@media only screen and (max-width: 372px) {
     .tech-stack__item {
-        min-width: 100%;
+        min-width: 22%;
+		
     }
 }
-
 
 /*---------------------
   Testimonial
@@ -1348,12 +1375,14 @@ ol {
 
 .footer__widget ul li {
 	list-style: none;
+	white-space: nowrap;
 }
 
 .footer__widget ul li a {
 	font-size: 15px;
 	color: #707070;
 	line-height: 36px;
+	white-space: nowrap;
 }
 
 .footer__address {
