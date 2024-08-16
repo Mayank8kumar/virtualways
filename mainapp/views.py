@@ -14,3 +14,5 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+# i will make changes here
