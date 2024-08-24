@@ -484,6 +484,10 @@ ol {
 }
 
 .hero__text .primary-btn {
+	font-family: 'Aldrich';
+	font: revert;
+	text-transform: uppercase;
+	color: #dfa667;
 	position: relative;
 	top: 100px;
 	opacity: 0;
@@ -725,6 +729,8 @@ ol {
 	-o-transition: all, 1s;
 	transition: all, 1s;
 }
+
+
 
 
 /*---------------------
